@@ -1,4 +1,5 @@
 import customtkinter
+
 from src.UI.LeftFrame.LeftFrame import LeftFrame
 from src.UI.RightFrame.RightFrame import RightFrame
 
