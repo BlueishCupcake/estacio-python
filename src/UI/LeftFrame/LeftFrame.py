@@ -1,11 +1,22 @@
 import customtkinter
+import os
+import sys
 from PIL import Image, ImageTk
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    
+    return os.path.join(base_path, relative_path)
 
 class LeftFrame(customtkinter.CTkFrame):
     def __init__(self, master):
         super().__init__(master)
-        
-        self.logo_image = Image.open("src/assets/np_logo.png")
+
+        image_path = resource_path("src/assets/np_logo.png")
+        self.logo_image = Image.open(image_path)
         self.logo_image = self.logo_image.resize((100, 100))
         self.logo_photo = ImageTk.PhotoImage(self.logo_image)
         self.logo_label = customtkinter.CTkLabel(self, image=self.logo_photo, text="")
