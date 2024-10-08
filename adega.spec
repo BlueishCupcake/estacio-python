@@ -5,7 +5,7 @@ a = Analysis(
     ['app.py'],
     pathex=[],
     binaries=[],
-    datas=[('src/assets/np_logo.png', 'src/assets')],
+    datas=[('src/assets/np_logo.png', 'src/assets'), ('.env', '.')],
     hiddenimports=['customtkinter', 'PIL._tkinter_finder', 'PIL.ImageTk', 'PIL.Image'],
     hookspath=[],
     hooksconfig={},
