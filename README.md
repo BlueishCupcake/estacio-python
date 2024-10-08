@@ -9,4 +9,4 @@ Principais caracteristicas do projeto:
 
 ### Fazer o download do programa executavel
 
-Você pode encontrar o arquivo que executa o programa [aqui](https://github.com/BlueishCupcake/estacio-python/blob/main/dist/app.exe).
+Você pode encontrar o arquivo que executa o programa [aqui](https://github.com/BlueishCupcake/estacio-python/releases/download/Teste/app.exe).
